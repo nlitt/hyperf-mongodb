@@ -1,0 +1,54 @@
+{
+    "name": "nligo/mongodb",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf"
+    ],
+    "description": "hyperf mongodb扩展包",
+    "autoload": {
+        "psr-4": {
+            "Nlitt\\Mongodb\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperfTest\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=7.2",
+        "psr/container": "^1.0",
+        "hyperf/pool": "^1.1.0",
+        "hyperf/utils": "~1.1.0",
+        "hyperf/cache": "~1.1.0",
+        "hyperf/command": "~1.1.0",
+        "hyperf/config": "~1.1.0",
+        "hyperf/contract": "~1.1.0",
+        "hyperf/di": "~1.1.0",
+        "mongodb/mongodb": "^1.5"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.14",
+        "mockery/mockery": "^1.0",
+        "phpstan/phpstan": "^0.12",
+        "phpunit/phpunit": ">=7.0",
+        "swoole/ide-helper": "dev-master",
+        "swow/swow": "dev-develop",
+        "symfony/var-dumper": "^5.1"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit -c phpunit.xml --colors=always",
+        "analyse": "phpstan analyse --memory-limit 1024M -l 0 ./src",
+        "cs-fix": "php-cs-fixer fix $1"
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Nlitt\\Mongodb\\ConfigProvider"
+        }
+    }
+}
