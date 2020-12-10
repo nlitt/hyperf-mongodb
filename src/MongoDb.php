@@ -2,14 +2,14 @@
 
 declare(strict_types = 1);
 
-namespace Nlitt\MongoDb;
+namespace Nlitt\Mongodb;
 
 use MongoDB\BSON\JavascriptInterface;
 use MongoDB\Operation\Explainable;
-use Nlitt\MongoDb\Exception\MongoDBException;
-use Nlitt\MongoDb\Pool\PoolFactory;
+use Nlitt\Mongodb\Exception\MongoDBException;
+use Nlitt\Mongodb\Pool\PoolFactory;
 use Hyperf\Utils\Context;
-use Nlitt\MongoDb\Utils\Arr;
+use Nlitt\Mongodb\Utils\Arr;
 
 /**
  * Class MongoDb

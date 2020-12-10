@@ -6,7 +6,7 @@ namespace Nlitt\Mongodb\Pool;
 
 use Hyperf\Contract\ConfigInterface;
 use Hyperf\Contract\ConnectionInterface;
-use Nlitt\MongoDb\MongoDbConnection;
+use Nlitt\Mongodb\MongoDbConnection;
 use Hyperf\Pool\Pool;
 use Hyperf\Utils\Arr;
 use Psr\Container\ContainerInterface;

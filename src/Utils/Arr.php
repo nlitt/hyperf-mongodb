@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
-namespace Nlitt\MongoDb\Utils;
+namespace Nlitt\Mongodb\Utils;
 
 
 use Closure;
-use Nlitt\MongoDb\Utils\Contract\Arrayable;
+use Nlitt\Mongodb\Utils\Contract\Arrayable;
 
 class Arr
 {

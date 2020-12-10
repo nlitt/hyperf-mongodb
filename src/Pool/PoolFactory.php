@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Nlitt\MongoDb\Pool;
+namespace Nlitt\Mongodb\Pool;
 
 
 use Hyperf\Di\Container;

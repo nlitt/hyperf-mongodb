@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Nlitt\MongoDb\Exception;
+namespace Nlitt\Mongodb\Exception;
 
 use Throwable;
 

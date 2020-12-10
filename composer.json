@@ -1,41 +1,43 @@
 {
-    "name": "nligo/mongodb",
-    "type": "library",
-    "license": "MIT",
-    "keywords": [
-        "php",
-        "hyperf"
-    ],
-    "description": "hyperf mongodb扩展包",
-    "autoload": {
-        "psr-4": {
-            "Nlitt\\Mongodb\\": "src/"
-        }
+  "name": "nligo/mongodb",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "php",
+    "hyperf"
+  ],
+  "description": "hyperf mongodb扩展包",
+  "autoload": {
+    "psr-4": {
+      "Nlitt\\Mongodb\\": "src/"
     },
-    "autoload-dev": {
-        "psr-4": {
-            "HyperfTest\\": "tests"
-        }
-    },
-    "require": {
-        "php": ">=7.2",
-        "psr/container": "^1.0",
-        "mongodb/mongodb": "^1.5"
-    },
-    "require-dev": {
-        "hyperf/di": "~1.1.0"
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "scripts": {
-        "test": "phpunit -c phpunit.xml --colors=always",
-        "analyse": "phpstan analyse --memory-limit 1024M -l 0 ./src",
-        "cs-fix": "php-cs-fixer fix $1"
-    },
-    "extra": {
-        "hyperf": {
-            "config": "Nlitt\\Mongodb\\ConfigProvider"
-        }
+    "files": [
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "HyperfTest\\": "tests"
     }
+  },
+  "require": {
+    "php": ">=7.2",
+    "psr/container": "^1.0",
+    "mongodb/mongodb": "^1.5"
+  },
+  "require-dev": {
+    "hyperf/di": "~1.1.0"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "scripts": {
+    "test": "phpunit -c phpunit.xml --colors=always",
+    "analyse": "phpstan analyse --memory-limit 1024M -l 0 ./src",
+    "cs-fix": "php-cs-fixer fix $1"
+  },
+  "extra": {
+    "hyperf": {
+      "config": "Nlitt\\Mongodb\\ConfigProvider"
+    }
+  }
 }

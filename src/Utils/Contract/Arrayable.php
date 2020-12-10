@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Nlitt\MongoDb\Utils\Contract;
+namespace Nlitt\Mongodb\Utils\Contract;
 /**
  * Interface Arrayable
  */

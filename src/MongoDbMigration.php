@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Nlitt\MongoDb;
+namespace Nlitt\Mongodb;
 
 use Hyperf\Contract\ConfigInterface;
 use Hyperf\Contract\ContainerInterface;
@@ -8,8 +8,8 @@ use Hyperf\Di\Annotation\Inject;
 use MongoDB\BSON\JavascriptInterface;
 use MongoDB\BSON\ObjectId;
 use MongoDB\Operation\Explainable;
-use Nlitt\MongoDb\Exception\MongoDBException;
-use Nlitt\MongoDb\Pool\PoolFactory;
+use Nlitt\Mongodb\Exception\MongoDBException;
+use Nlitt\Mongodb\Pool\PoolFactory;
 use MongoDB\Client;
 use MongoDB\Collection;
 use MongoDB\Database;
