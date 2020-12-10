@@ -125,14 +125,13 @@ class MongoDbConnection extends Connection implements ConnectionInterface
             /**
              * http://php.net/manual/zh/mongodb-driver-manager.construct.php
              */
-            $uri               = sprintf(
-                'mongodb://%s:%s@%s:%d/%s',
-                $this->config['username'],
-                $this->config['password'],
-                $this->config['host'],
-                $this->config['port'],
-                $this->config['db']
-            );
+            $uri               =
+                sprintf("mongodb://%s:%s@%s:%s",
+                    $this->config['username'],
+                    $this->config['password'],
+                    $this->config['host'],
+                    $this->config['port']
+                );
             $this->mongoClient = new Client($uri);
         } catch (InvalidArgumentException $e) {
             throw MongoDBException::managerError('mongodb 连接参数错误:' . $e->getMessage());
