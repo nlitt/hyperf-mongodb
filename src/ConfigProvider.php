@@ -1,15 +1,6 @@
 <?php
-
 declare(strict_types=1);
-/**
- * This file is part of Hyperf.
- *
- * @link     https://www.hyperf.io
- * @document https://doc.hyperf.io
- * @contact  group@hyperf.io
- * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
- */
-namespace Nlitt\Mongodb;
+namespace Nlitt\MongoDb;
 
 class ConfigProvider
 {
@@ -20,11 +11,21 @@ class ConfigProvider
             ],
             'commands' => [
             ],
+            'listeners' => [],
+            // 合并到  config/autoload/annotations.php 文件
             'annotations' => [
                 'scan' => [
                     'paths' => [
                         __DIR__,
                     ],
+                ],
+            ],
+            'publish' => [
+                [
+                    'id' => 'config',
+                    'description' => 'The config of mongodb client.',
+                    'source' => __DIR__ . '/../publish/mongodb.php',
+                    'destination' => BASE_PATH . '/config/autoload/mongodb.php',
                 ],
             ],
         ];
